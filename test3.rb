@@ -1,5 +1,5 @@
 class Measurement
-	def initialize(power_density,watt,volt,max_length,min_length,max_width,min_width)
+	def initialize(power_density:,watt:,volt:,max_length:,min_length:,max_width:,min_width:)
 		@power_density = power_density
 		@watt = watt
 		@volt = volt
@@ -19,6 +19,5 @@ class Measurement
 	end
 end
 
-measurement1 = Measurement.new(50,1200,100,60,50,30,10)
+measurement1 = Measurement.new(gets.to_i,gets.to_i,gets.to_i,gets.to_i,gets.to_i,gets.to_i,gets.to_i)
 measurement1.show_value
-
